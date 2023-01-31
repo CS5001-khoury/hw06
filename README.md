@@ -1,9 +1,13 @@
-# homework_template
-Template repository for new homeworks
+# Homework 06 - Working with For Loops
 
-Assignment description here
+## Update Star Rating App
 
-Highlight each major component with a section, add **task** for tasks and include 👉🏽 or something obvious so they can be found easily. 
+
+## Searching Data
+
+
+
+👉🏽 **task** 
 
 ## 📝 Grading Rubric
 
@@ -24,5 +28,4 @@ AG - Auto-graded
 MG - Manually graded
 
 
-## 📚 Additional Resources
-Use this section to keep the homework description shorter, and instead talk about additional resources down here (such as tools to use, websites to review, etc)
+## 📚 Resources
