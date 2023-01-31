@@ -2,6 +2,12 @@
 
 ## Update Star Rating App
 
+Look at your star rating app from HW05. Would any of your loops be better written as `for` loop? Modify the code to be a for loop.
+
+In your README.md, justify each loop as to why you thought `while` or `for` was the better implementation. 
+
+
+
 
 ## Searching Data
 
