@@ -10,9 +10,10 @@ This simple application helps figure out the stats of a course exam file
 from typing import Tuple, Set
 import csv
 
-### uncomment and comment to try different files
+# uncomment and comment to try different files
 DATA_FILE = "exam_grades.csv"
-# DATA_FILE = "simple_file.csv"
+#  DATA_FILE = "simple_file.csv"
+
 
 def average(data: Tuple[float]) -> float:
     """Calculates the average value for a range of values
@@ -27,20 +28,21 @@ def average(data: Tuple[float]) -> float:
     Returns:
         float: the average, if len(data) is 0, returns 0
     """
-    return 0 
+    return 0
+
 
 def filter_by_col(index: int, data: Tuple) -> Tuple:
     """Given a list of lists (tuple of tuples),
-    it will pull a single column out of the lists. 
-    
-    
+    it will pull a single column out of the lists.
+
+
     For example:
 
         Given the following tuple
         ((1, 2, 3),
          (4, 5, 6),
          (7, 8, 9))
-        
+
         >>>filter_by_col(1, ((1, 2, 3),(4, 5, 6), (7, 8, 9)))
         (2, 5, 8)
         >>>filter_by_col(0, ((1, 2, 3),(4, 5, 6), (7, 8, 9)))
@@ -56,9 +58,10 @@ def filter_by_col(index: int, data: Tuple) -> Tuple:
     """
     return ()
 
-def filter_by_year(year: int, data: Tuple, year_index:int = 0) -> Tuple[Tuple]:
+
+def filter_by_year(year: int, data: Tuple, year_index: int = 0) -> Tuple[Tuple]:
     """Takes a grades tuple of tuples, and pulls
-    out every row that matches the year given. 
+    out every row that matches the year given.
 
 
     Args:
@@ -83,7 +86,8 @@ def get_all_years(data: Tuple[Tuple], year_index: int = 0) -> Set:
     """
     return set()
 
-def get_stats(year: int, col_index: int, data: Tuple, year_index:int = 0) -> str:
+
+def get_stats(year: int, col_index: int, data: Tuple, year_index: int = 0) -> str:
     """Generates a string of stats for a given year and a provided dataset
 
     Args:
@@ -95,10 +99,11 @@ def get_stats(year: int, col_index: int, data: Tuple, year_index:int = 0) -> str
     Returns:
         str: in format of:   f"{year:.0f} stats: average={avg:.2f}, max={mx:.2f}, min={mn:.2f}"
     """
-    return ''
+    return ""
 
 
-### We will not use this main, so you may modify it
+# We will not use this main, so you may modify it
+
 
 def main():
     grades, fields = get_grades(DATA_FILE)
@@ -110,10 +115,10 @@ def main():
     print("\n".join(year_stat))
 
 
-### DO NOT MODIFY
+# DO NOT MODIFY
 # Doing this here, so you have more data to work with.
 # you may 'hard code' data for your tests to make sure things are working
-def get_grades(file: str) -> Tuple[Tuple[Tuple[float, float, float, float, float]], Tuple[str]]:
+def get_grades(file: str) -> Tuple[Tuple[Tuple], Tuple]:
     """Reads a Comma Separated Value file and dumps the contents
     into a tuple of tuples. Converts all numbers to floats.
 
@@ -140,8 +145,6 @@ def get_grades(file: str) -> Tuple[Tuple[Tuple[float, float, float, float, float
             contents.append(tuple([float(x) for x in row]))
 
         return tuple(contents), tuple(fields)
-
-
 
 
 if __name__ == "__main__":
