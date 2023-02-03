@@ -96,3 +96,7 @@ MG - Manually graded
 * [Tuple vs List Memory Management](https://www.opensourceforu.com/2021/05/memory-management-in-lists-and-tuples/)
 * [Pure Functions](https://www.opensourceforu.com/2021/05/memory-management-in-lists-and-tuples/)
 * [Side Effect](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+
+
+### Tuple vs tuple
+When working with type hints, because of the way python deals with `tuple` you have to important `Tuple` which is only a type hint. The same is true for Set, List, and others. As such, don't let it confuse you when you see Tuple, you really want to think `tuple`. 
