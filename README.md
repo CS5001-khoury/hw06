@@ -94,7 +94,7 @@ MG - Manually graded
 * [What is a CSV File](https://www.howtogeek.com/348960/what-is-a-csv-file-and-how-do-i-open-it/)
 * [CSV File Opening in Python](https://www.tutorialspoint.com/how-to-read-csv-file-in-pytho) -You DO NOT have to open the CSV file, the code is provided. Just providing this resource in case you want more details. 
 * [Tuple vs List Memory Management](https://www.opensourceforu.com/2021/05/memory-management-in-lists-and-tuples/)
-* [Pure Functions](https://www.opensourceforu.com/2021/05/memory-management-in-lists-and-tuples/)
+* [Pure Functions](https://en.wikipedia.org/wiki/Pure_function)
 * [Side Effect](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
 
 
